@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "display_name": "Caveman",
+    "short_desc": "LLM Output Compression Plugin",
+    "desc": "Makes AstrBot's LLM responses extremely concise, cutting ~65% of output tokens. Supports 4 compression levels (lite/full/ultra/wenyan), i18n multi-language support. Inspired by JuliusBrussee/caveman."
+  },
+  "config": {
+    "default_level": {
+      "description": "Default Compression Level",
+      "hint": "The default caveman mode when a new session starts. Users can still switch anytime via the /caveman command.",
+      "options": {
+        "lite": "Lite — Professional, no fluff",
+        "full": "Full — Default caveman mode",
+        "ultra": "Ultra — Telegraphic, max compression",
+        "wenyan": "Wenyan — Classical Chinese terseness",
+        "wenyan-lite": "Lite Wenyan",
+        "wenyan-ultra": "Ultra Wenyan"
+      }
+    },
+    "auto_enable": {
+      "description": "Auto Enable",
+      "hint": "Automatically enable caveman mode for every new session (using the default level above). When off, users must run /caveman on manually."
+    },
+    "language": {
+      "description": "Plugin Language",
+      "hint": "Language used for plugin replies (help text, status messages). auto = follow AstrBot global setting; or force a specific language.",
+      "options": {
+        "auto": "Auto (follow AstrBot setting)",
+        "zh-CN": "中文",
+        "en-US": "English",
+        "ru-RU": "Русский"
+      }
+    }
+  }
+}

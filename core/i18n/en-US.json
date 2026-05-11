@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "online_doc": "https://getcaveman.dev/",
+    "doc": "https://github.com/Midwich/astrbot-plugin-caveman"
+  },
+  "help": {
+    "title": "🪨 Caveman Plugin Usage Guide",
+    "usage": "Trigger: {prefix}caveman [command]",
+    "introduce": "Make your AI assistant respond with extreme brevity — {percentage}% token savings.",
+    "docText": "Full docs: {doc}",
+    "level_stick": "Level persists until changed or session ends.",
+    "commands_title": "Commands",
+    "commands": {
+      "on": "Enable caveman mode (default: full)",
+      "off": "Disable caveman mode",
+      "status": "Show current mode",
+      "help": "Show this help"
+    },
+    "modes_title": "Modes",
+    "modes": {
+      "lite": "Professional, no fluff",
+      "full": "Default caveman. Fragments, no articles",
+      "ultra": "Telegraphic, maximum compression",
+      "wenyan": "Classical Chinese terseness",
+      "wenyan-lite": "Lite wenyan mode",
+      "wenyan-ultra": "Ultra wenyan mode"
+    },
+    "examples_title": "Examples",
+    "examples_chat": "Chat",
+    "examples_ask": "Ask",
+    "examples_answer": "Reply"
+  },
+  "messages": {
+    "mode_on": "🪨 Caveman {level} mode ON",
+    "mode_off": "🪨 Caveman mode OFF",
+    "mode_invalid": "❌ Unknown mode. Available: {validModes}",
+    "level": "Level: {level}",
+    "caveman_prefix": "🪨 Caveman",
+    "caveman_on_emoji": "🪨"
+  },
+  "caveman_introduction": "Caveman is an open-source project by JuliusBrussee, designed to make LLMs respond with minimal tokens. GitHub: {doc}",
+  "config": {
+    "default_level": {
+      "description": "Default Compression Level",
+      "hint": "The default caveman mode when a new session starts. Users can still switch anytime via /caveman command.",
+      "options": {
+        "lite": "Lite — Professional, no fluff",
+        "full": "Full — Default caveman mode",
+        "ultra": "Ultra — Telegraphic, max compression",
+        "wenyan": "Wenyan — Classical Chinese terseness",
+        "wenyan-lite": "Lite Wenyan",
+        "wenyan-ultra": "Ultra Wenyan"
+      }
+    },
+    "auto_enable": {
+      "description": "Auto Enable",
+      "hint": "Automatically enable caveman mode for every new session (using the default level above). When off, users must run /caveman on manually."
+    },
+    "language": {
+      "description": "Plugin Language",
+      "hint": "Language used for plugin replies (help text, status messages). auto = follow AstrBot global setting; or force a specific language.",
+      "options": {
+        "auto": "Auto (follow AstrBot setting)",
+        "en-US": "English",
+        "zh-CN": "中文",
+        "ru-RU": "Русский"
+      }
+    }
+  }
+}

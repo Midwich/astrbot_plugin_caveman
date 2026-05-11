@@ -1,0 +1,34 @@
+{
+  "default_level": {
+    "description": "Default Compression Level",
+    "hint": "The default caveman mode when a new session starts. Users can still switch anytime via /caveman command.",
+    "type": "string",
+    "default": "full",
+    "options": [
+      "lite",
+      "full",
+      "ultra",
+      "wenyan",
+      "wenyan-lite",
+      "wenyan-ultra"
+    ]
+  },
+  "auto_enable": {
+    "description": "Auto Enable",
+    "hint": "Automatically enable caveman mode for every new session (using the default level above). When off, users must run /caveman on manually.",
+    "type": "bool",
+    "default": false
+  },
+  "language": {
+    "description": "Plugin Language",
+    "hint": "Language used for plugin replies (help text, status messages). auto = follow AstrBot global setting; or force a specific language.",
+    "type": "string",
+    "default": "auto",
+    "options": [
+      "auto",
+      "en-US",
+      "zh-CN",
+      "ru-RU"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+name: caveman
+author: Midwich
+version: "0.0.1"
+description: Caveman mode plugin for AstrBot. Makes LLM responses extremely concise, cutting ~65% of output tokens. 4 compression levels (lite/full/ultra/wenyan), i18n support (en-US/zh-CN/ru-RU). Inspired by JuliusBrussee/caveman.
+repo: https://github.com/Midwich/astrbot_plugin_caveman

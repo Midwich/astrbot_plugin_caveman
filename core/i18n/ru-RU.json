@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "online_doc": "https://getcaveman.dev/",
+    "doc": "https://github.com/Midwich/astrbot-plugin-caveman"
+  },
+  "help": {
+    "title": "🪨 Плагин Caveman — Руководство",
+    "usage": "Команда: {prefix}caveman [команда]",
+    "introduce": "Заставляет AI-ассистента отвечать максимально лаконично — экономия {percentage}% токенов.",
+    "docText": "Полная документация: {doc}",
+    "level_stick": "Уровень сохраняется до изменения или окончания сессии.",
+    "commands_title": "Команды",
+    "commands": {
+      "on": "Включить режим Caveman (по умолчанию: полный)",
+      "off": "Выключить режим Caveman",
+      "status": "Показать текущий режим",
+      "help": "Показать справку"
+    },
+    "modes_title": "Режимы",
+    "modes": {
+      "lite": "Профессионально, без воды",
+      "full": "Полный caveman. Фрагменты, без артиклей",
+      "ultra": "Телеграфный стиль, максимальное сжатие",
+      "wenyan": "Классический китайский стиль",
+      "wenyan-lite": "Лёгкий 文言文",
+      "wenyan-ultra": "Экстремальный 文言文"
+    },
+    "examples_title": "Примеры",
+    "examples_chat": "Диалог",
+    "examples_ask": "Вопрос",
+    "examples_answer": "Ответ"
+  },
+  "messages": {
+    "mode_on": "🪨 Caveman режим {level} ВКЛЮЧЁН",
+    "mode_off": "🪨 Caveman режим ВЫКЛЮЧЕН",
+    "mode_invalid": "❌ Неизвестный режим. Доступные: {validModes}",
+    "level": "Уровень: {level}",
+    "caveman_prefix": "🪨 Caveman",
+    "caveman_on_emoji": "🪨"
+  },
+  "caveman_introduction": "Caveman — это проект с открытым исходным кодом от JuliusBrussee, направленный на минимизацию токенов в ответах LLM. GitHub: {doc}",
+  "config": {
+    "default_level": {
+      "description": "Уровень сжатия по умолчанию",
+      "hint": "Режим caveman при запуске новой сессии. Пользователь может переключить в любой момент командой /caveman.",
+      "options": {
+        "lite": "Lite — Профессионально, без воды",
+        "full": "Full — Полный caveman",
+        "ultra": "Ultra — Телеграфный стиль",
+        "wenyan": "Wenyan — Классический китайский",
+        "wenyan-lite": "Lite Wenyan",
+        "wenyan-ultra": "Ultra Wenyan"
+      }
+    },
+    "auto_enable": {
+      "description": "Автоматически включать",
+      "hint": "При запуске каждой новой сессии автоматически включать caveman (с уровнем по умолчанию). При выключении требуется ручная команда /caveman on."
+    },
+    "language": {
+      "description": "Язык плагина",
+      "hint": "Язык ответов плагина (справка, статус). auto = следовать глобальной настройке AstrBot; или принудительно выбрать язык.",
+      "options": {
+        "auto": "Авто (как в AstrBot)",
+        "ru-RU": "Русский",
+        "en-US": "English",
+        "zh-CN": "中文"
+      }
+    }
+  }
+}

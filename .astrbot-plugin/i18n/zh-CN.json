@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "display_name": "Caveman",
+    "short_desc": "LLM 输出压缩插件",
+    "desc": "让 AstrBot 的 LLM 回复变得极致简洁，节省约 65% 的输出 token。支持 lite/full/ultra/文言文 四种压缩等级，i18n 多语言支持。灵感来源于 JuliusBrussee/caveman。"
+  },
+  "config": {
+    "default_level": {
+      "description": "默认压缩等级",
+      "hint": "新会话启动时的默认 caveman 模式。用户仍可通过 /caveman 命令随时切换。",
+      "options": {
+        "lite": "轻量 — 专业简洁，无废话",
+        "full": "完整 — 默认 caveman 模式",
+        "ultra": "极限 — 电报风格，最大压缩",
+        "wenyan": "文言文 — 古典中文简洁风格",
+        "wenyan-lite": "精简文言文",
+        "wenyan-ultra": "极致文言文"
+      }
+    },
+    "auto_enable": {
+      "description": "自动启用",
+      "hint": "每个新会话开始时自动开启 caveman 模式（使用上面的默认等级）。关闭后需要手动执行 /caveman on 启用。"
+    },
+    "language": {
+      "description": "插件语言",
+      "hint": "插件回复用户的语言（帮助文本、状态消息）。auto = 跟随 AstrBot 全局设置；也可强制指定为某一种语言。",
+      "options": {
+        "auto": "自动（跟随 AstrBot 设置）",
+        "zh-CN": "中文",
+        "en-US": "English",
+        "ru-RU": "Русский"
+      }
+    }
+  }
+}

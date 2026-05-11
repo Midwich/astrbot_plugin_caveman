@@ -1,0 +1,142 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a temporary
+#  directory before pyinstaller executes.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.pot
+*.po
+
+# Django stuff:
+*.log
+local_settings.py
+*.db
+*.db-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.yaml
+
+# pyenv
+#   For a library or module, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in.
+.python-version
+
+# pipenv
+#   According to pypi.org, Pipenv not recommended for Python development, as this
+#   may leave the used resolver marked as broken on PyPI (see https://pipenv.pypa.io/en/latest/technical-details.html)
+Pipfile
+Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pydantic/pydantic-input
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+celeryd.sig
+celeryd.pid
+celeryd.log
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# Environment variables
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.swp
+*~
+*.tmp
+*.temp
+
+# Logs
+logs
+*.log
+
+# Local config
+.settings.cfg
+
+# Generated files
+dist/
+build/

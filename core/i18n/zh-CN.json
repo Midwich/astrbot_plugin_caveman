@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "online_doc": "https://getcaveman.dev/",
+    "doc": "https://github.com/Midwich/astrbot-plugin-caveman"
+  },
+  "help": {
+    "title": "🪨 Caveman 插件使用帮助",
+    "usage": "命令触发：{prefix}caveman [命令]",
+    "introduce": "让AI助手以极简洁的方式回答，{percentage}%的token节省。",
+    "docText": "详细介绍见：{doc}",
+    "level_stick": "等级在更改或会话结束前保持不变。",
+    "commands_title": "命令",
+    "commands": {
+      "on": "启用Caveman模式（默认：完整模式）",
+      "off": "关闭Caveman模式",
+      "status": "查看当前模式",
+      "help": "显示帮助信息"
+    },
+    "modes_title": "模式",
+    "modes": {
+      "lite": "专业简洁，无废话",
+      "full": "默认模式，碎片化表达",
+      "ultra": "电报风格，极限压缩",
+      "wenyan": "文言文模式",
+      "wenyan-lite": "文言文精简模式",
+      "wenyan-ultra": "极致文言文模式"
+    },
+    "examples_title": "示例",
+    "examples_chat": "对话",
+    "examples_ask": "提问",
+    "examples_answer": "回答"
+  },
+  "messages": {
+    "mode_on": "🪨 Caveman {level}模式 已启用",
+    "mode_off": "🪨 Caveman模式 已关闭",
+    "mode_invalid": "❌ 不存在的模式，可用模式：{validModes}",
+    "level": "等级：{level}",
+    "caveman_prefix": "🪨 Caveman",
+    "caveman_on_emoji": "🪨"
+  },
+  "caveman_introduction": "Caveman是一个开源项目，由JuliusBrussee发起，致力于让LLM以极简的方式输出信息。GitHub地址：{doc}",
+  "config": {
+    "default_level": {
+      "description": "默认压缩等级",
+      "hint": "新会话启动时的默认 caveman 模式。用户仍可通过 /caveman 命令随时切换。",
+      "options": {
+        "lite": "轻量 — 专业简洁，无废话",
+        "full": "完整 — 默认 caveman 模式",
+        "ultra": "极限 — 电报风格，最大压缩",
+        "wenyan": "文言文 — 古典中文简洁风格",
+        "wenyan-lite": "精简文言文",
+        "wenyan-ultra": "极致文言文"
+      }
+    },
+    "auto_enable": {
+      "description": "自动启用",
+      "hint": "每个新会话开始时自动开启 caveman 模式（使用上面的默认等级）。关闭后需要手动执行 /caveman on 启用。"
+    },
+    "language": {
+      "description": "插件语言",
+      "hint": "插件回复用户的语言（帮助文本、状态消息）。auto = 跟随 AstrBot 全局设置；也可强制指定为某一种语言。",
+      "options": {
+        "auto": "自动（跟随 AstrBot 设置）",
+        "zh-CN": "中文",
+        "en-US": "English",
+        "ru-RU": "Русский"
+      }
+    }
+  }
+}
